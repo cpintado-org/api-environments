@@ -26,7 +26,8 @@ jobs:
       # Runs a single command using the runners shell
       - name: Create environment
         run: |
-          curl -vvv -X PUT -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" https://api.github.com/repos/${{ github.repository }}/environments/testenv1
+          curl -vvv -X PUT -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" https://api.github.com/repos/${{ github.repository }}/environments/testenv-GH
+          curl -vvv -X PUT -H "Authorization: token ${{ secrets.PAT }}" https://api.github.com/repos/${{ github.repository }}/environments/testenv-PAT
 
 
 
