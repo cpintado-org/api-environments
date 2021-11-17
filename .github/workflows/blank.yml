@@ -19,13 +19,7 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    
-    permissions:
-      admin: write
-      actions: read
-      contents: read
-      environments: write
-      secrets: write
+  
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
